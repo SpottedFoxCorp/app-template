@@ -47,8 +47,9 @@ def main_menu():
         screen.blit(button_img_large, button1_rect)
         screen.blit(button_img_large, button2_rect)
         
-        draw_text('Continue', font, WHITE, screen, 115, 410)
-        draw_text('Options', font, WHITE, screen, 315, 410)
+        draw_text('Data goes here and other information goes here', font, WHITE, screen, 75, 75)
+        draw_text('Continue', font, WHITE, screen, 115, 415)
+        draw_text('Options', font, WHITE, screen, 315, 415)
         
         click = False
         for event in pygame.event.get():
