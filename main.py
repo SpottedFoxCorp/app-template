@@ -18,8 +18,6 @@ button_unclicked = pygame.image.load('button_unclicked.png').convert_alpha()
 button_clicked = pygame.image.load('button_clicked.png').convert_alpha()
 text_box = pygame.image.load('text_box.png').convert_alpha()
 
-click = False
-
 def draw_text(text, font, color, surface, x, y):
     text_render = font.render(text, 1, color)
     text_rect = text_render.get_rect()
@@ -27,6 +25,9 @@ def draw_text(text, font, color, surface, x, y):
     surface.blit(text_render, text_rect)
 
 def main_menu():
+
+    click = False
+
     while True:
         screen.fill(BLACK)
         screen.blit(bg_img, (0,0))
@@ -78,6 +79,7 @@ def main_menu():
                 if event.button == 1:
                     click = True
         
+    
         pygame.display.update()
         main_clock.tick(60)
 
